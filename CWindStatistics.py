@@ -60,18 +60,26 @@ These data were analyzed in detail in the following article:
 """
 1. Use the <var> = np.loadtxt(<file>) to read the data into an array. Use <array>.shape to see the dimensions of the array with the data.
 """
-
+import numpy as np
+data = np.loadtxt('wind.data')
+data.shape = (-1, 15)
+#print(data)
 
 """
 2. As stated in the introduction, the first 3 columns of the data file are the dates. The remaining columns are the wind speed data. Use array slicing to create an array containing only the wind speed data. 
 <var> = <array>[<rows>, <columns>]
 """
-
+data = data[0:, 3:15]
+#print(data)
 
 """
 3. Print the minimum (<array>.min()), maximum (<array.max()), mean (<array>.mean()), and standard deviation (<array>.std()), for ALL the wind speed data.)
 """
 
+print(data.min())
+print(data.max())
+print(data.mean())
+print(data.std())
 
 """
 4. As stated above, each column in the data file contains wind speed data for a different city. Print the min, max, mean, and standard deviation for each city.
@@ -79,6 +87,7 @@ These data were analyzed in detail in the following article:
 The min is found using <array>.min(axis=0)
 """
 
+print(data.min(axis = 0))
 
 """
 5. As stated above, each row in the data file contains wind speed data for each day. Print the min, max, mean, and standard deviation for each day.__doc__
