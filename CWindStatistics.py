@@ -11,7 +11,6 @@ The data in 'wind.data' has the following format::
         61  1  3 18.50 16.88 12.33 10.13 11.17  6.17 11.25  8.04  8.50  7.67 12.75 12.71
    
 The first three columns are year, month and day.  The remaining 12 columns are average windspeeds in knots at 12 cities in Ireland on that day.
-   
 
 
 2. Calculate the min, max and mean windspeeds and standard deviation of the
