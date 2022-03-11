@@ -20,4 +20,4 @@ today = acme[1:]
 previous = acme[:4]
 
 pcd = 100 * (today - previous)/previous 
-print(pcd)tlic
+print(pcd)
